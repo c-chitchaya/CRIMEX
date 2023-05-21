@@ -1,0 +1,208 @@
+
+-----------------------------------------------------------------
+
+classification_report
+              precision    recall  f1-score   support
+
+      Action       0.12      0.13      0.13      3465
+    Criminal       0.70      0.59      0.64      4603
+    Datetime       0.60      0.28      0.39      2184
+ Enforcement       0.59      0.59      0.59      6598
+        Item       0.55      0.56      0.55      4839
+    Location       0.66      0.60      0.63      4397
+           O       0.91      0.95      0.93    222549
+   Rootcause       0.18      0.00      0.01      1953
+     Trigger       0.35      0.13      0.19      2243
+      Victim       0.68      0.48      0.56      2956
+       Worth       0.51      0.10      0.16      3891
+
+    accuracy                           0.87    259678
+   macro avg       0.53      0.40      0.43    259678
+weighted avg       0.86      0.87      0.86    259678
+
+-----------------------------------------------------------------
+
++--------------+-----------------------+
+| MCC report 
++--------------+-----------------------+
+| Action       |  0.11393156724389837
+| Criminal     |  0.6340313200392328
+| Datetime     |  0.40858241076896273
+| Enforcement  |  0.5756350592946932
+| Item         |  0.5421566294919428
+| Location     |  0.6248820592561607
+| O            |  0.45337315416246815
+| Rootcause    |  0.027407753426069992
+| Trigger      |  0.211558227940677
+| Victim       |  0.5642954908090118
+| Worth        |  0.2189719598332728
++---------------+-----------------------+
+| Overall      |  0.4574347851696745
++---------------+-----------------------+
+
+-----------------------------------------------------------------
+
++--------------+-----------------------+
+| ACC report 
++--------------+-----------------------+
+| Action       |  0.9760203020664053
+| Criminal     |  0.9881699643404525
+| Datetime     |  0.9923636195596084
+| Enforcement  |  0.979004767442756
+| Item         |  0.9831060005083219
+| Location     |  0.9880236292639346
+| O            |  0.878680519720577
+| Rootcause    |  0.9923520667904097
+| Trigger      |  0.9903919469496838
+| Victim       |  0.9914625035621039
+| Worth        |  0.9850622694259814
++---------------+-----------------------+
+| Overall      |  0.9767852354209303
++---------------+-----------------------+
+
+-----------------------------------------------------------------
+
++--------------+-----------------------+
+| precison report 
++--------------+-----------------------+
+| Action       |  0.1226775956284153
+| Criminal     |  0.6976504002065582
+| Datetime     |  0.5965417867435159
+| Enforcement  |  0.5870291616038882
+| Item         |  0.5458790093382054
+| Location     |  0.6602739726027397
+| O            |  0.9120030709642915
+| Rootcause    |  0.17647058823529413
+| Trigger      |  0.35106382978723405
+| Victim       |  0.6777296777296777
+| Worth        |  0.5079575596816976
++---------------+-----------------------+
+| Overall      |  0.9767852354209303
++---------------+-----------------------+
+
+-----------------------------------------------------------------
+
+Over All
+ent_type
+{'correct': 2190, 'incorrect': 239, 'partial': 0, 'missed': 3421, 'spurious': 2185, 'possible': 5850, 'actual': 4614, 'precision': 0.47464239271781533, 'recall': 0.37435897435897436, 'f1-score': 0.4185779816513761}
+partial
+{'correct': 1570, 'incorrect': 0, 'partial': 859, 'missed': 3421, 'spurious': 2185, 'possible': 5850, 'actual': 4614, 'precision': 0.4333550065019506, 'recall': 0.3417948717948718, 'f1-score': 0.3821674311926605}
+strict
+{'correct': 1474, 'incorrect': 955, 'partial': 0, 'missed': 3421, 'spurious': 2185, 'possible': 5850, 'actual': 4614, 'precision': 0.31946250541829213, 'recall': 0.25196581196581197, 'f1-score': 0.28172782874617736}
+exact
+{'correct': 1570, 'incorrect': 859, 'partial': 0, 'missed': 3421, 'spurious': 2185, 'possible': 5850, 'actual': 4614, 'precision': 0.34026874729085393, 'recall': 0.26837606837606837, 'f1-score': 0.30007645259938837}
+
+-----------------------------------------------------------------
+
+Each Labels
+
+Criminal
+ent_type
+{'correct': 235, 'incorrect': 64, 'partial': 0, 'missed': 229, 'spurious': 2185, 'possible': 528, 'actual': 2484, 'precision': 0.09460547504025765, 'recall': 0.44507575757575757, 'f1-score': 0.1560424966799469}
+partial
+{'correct': 200, 'incorrect': 0, 'partial': 99, 'missed': 229, 'spurious': 2185, 'possible': 528, 'actual': 2484, 'precision': 0.10044283413848631, 'recall': 0.4725378787878788, 'f1-score': 0.16567065073041168}
+strict
+{'correct': 156, 'incorrect': 143, 'partial': 0, 'missed': 229, 'spurious': 2185, 'possible': 528, 'actual': 2484, 'precision': 0.06280193236714976, 'recall': 0.29545454545454547, 'f1-score': 0.10358565737051793}
+exact
+{'correct': 200, 'incorrect': 99, 'partial': 0, 'missed': 229, 'spurious': 2185, 'possible': 528, 'actual': 2484, 'precision': 0.08051529790660225, 'recall': 0.3787878787878788, 'f1-score': 0.13280212483399734}
+
+
+Victim
+ent_type
+{'correct': 234, 'incorrect': 68, 'partial': 0, 'missed': 186, 'spurious': 2185, 'possible': 488, 'actual': 2487, 'precision': 0.09408926417370325, 'recall': 0.47950819672131145, 'f1-score': 0.15731092436974786}
+partial
+{'correct': 197, 'incorrect': 0, 'partial': 105, 'missed': 186, 'spurious': 2185, 'possible': 488, 'actual': 2487, 'precision': 0.10032167269802976, 'recall': 0.5112704918032787, 'f1-score': 0.1677310924369748}
+strict
+{'correct': 160, 'incorrect': 142, 'partial': 0, 'missed': 186, 'spurious': 2185, 'possible': 488, 'actual': 2487, 'precision': 0.06433453960595094, 'recall': 0.32786885245901637, 'f1-score': 0.10756302521008403}
+exact
+{'correct': 197, 'incorrect': 105, 'partial': 0, 'missed': 186, 'spurious': 2185, 'possible': 488, 'actual': 2487, 'precision': 0.0792119018898271, 'recall': 0.4036885245901639, 'f1-score': 0.13243697478991595}
+
+
+Action
+ent_type
+{'correct': 61, 'incorrect': 24, 'partial': 0, 'missed': 493, 'spurious': 2185, 'possible': 578, 'actual': 2270, 'precision': 0.026872246696035242, 'recall': 0.10553633217993079, 'f1-score': 0.042837078651685394}
+partial
+{'correct': 8, 'incorrect': 0, 'partial': 77, 'missed': 493, 'spurious': 2185, 'possible': 578, 'actual': 2270, 'precision': 0.020484581497797357, 'recall': 0.08044982698961937, 'f1-score': 0.032654494382022475}
+strict
+{'correct': 5, 'incorrect': 80, 'partial': 0, 'missed': 493, 'spurious': 2185, 'possible': 578, 'actual': 2270, 'precision': 0.0022026431718061676, 'recall': 0.00865051903114187, 'f1-score': 0.00351123595505618}
+exact
+{'correct': 8, 'incorrect': 77, 'partial': 0, 'missed': 493, 'spurious': 2185, 'possible': 578, 'actual': 2270, 'precision': 0.003524229074889868, 'recall': 0.01384083044982699, 'f1-score': 0.0056179775280898875}
+
+
+Location
+ent_type
+{'correct': 187, 'incorrect': 1, 'partial': 0, 'missed': 308, 'spurious': 2185, 'possible': 496, 'actual': 2373, 'precision': 0.07880320269700801, 'recall': 0.37701612903225806, 'f1-score': 0.1303590101080516}
+partial
+{'correct': 70, 'incorrect': 0, 'partial': 118, 'missed': 308, 'spurious': 2185, 'possible': 496, 'actual': 2373, 'precision': 0.05436156763590392, 'recall': 0.2600806451612903, 'f1-score': 0.08992680376437782}
+strict
+{'correct': 70, 'incorrect': 118, 'partial': 0, 'missed': 308, 'spurious': 2185, 'possible': 496, 'actual': 2373, 'precision': 0.029498525073746312, 'recall': 0.14112903225806453, 'f1-score': 0.04879749041477867}
+exact
+{'correct': 70, 'incorrect': 118, 'partial': 0, 'missed': 308, 'spurious': 2185, 'possible': 496, 'actual': 2373, 'precision': 0.029498525073746312, 'recall': 0.14112903225806453, 'f1-score': 0.04879749041477867}
+
+
+Datetime
+ent_type
+{'correct': 83, 'incorrect': 0, 'partial': 0, 'missed': 252, 'spurious': 2185, 'possible': 335, 'actual': 2268, 'precision': 0.03659611992945326, 'recall': 0.24776119402985075, 'f1-score': 0.06377257011140991}
+partial
+{'correct': 7, 'incorrect': 0, 'partial': 76, 'missed': 252, 'spurious': 2185, 'possible': 335, 'actual': 2268, 'precision': 0.01984126984126984, 'recall': 0.13432835820895522, 'f1-score': 0.034575489819439115}
+strict
+{'correct': 7, 'incorrect': 76, 'partial': 0, 'missed': 252, 'spurious': 2185, 'possible': 335, 'actual': 2268, 'precision': 0.0030864197530864196, 'recall': 0.020895522388059702, 'f1-score': 0.005378409527468306}
+exact
+{'correct': 7, 'incorrect': 76, 'partial': 0, 'missed': 252, 'spurious': 2185, 'possible': 335, 'actual': 2268, 'precision': 0.0030864197530864196, 'recall': 0.020895522388059702, 'f1-score': 0.005378409527468306}
+
+
+Item
+ent_type
+{'correct': 207, 'incorrect': 28, 'partial': 0, 'missed': 461, 'spurious': 2185, 'possible': 696, 'actual': 2420, 'precision': 0.08553719008264463, 'recall': 0.2974137931034483, 'f1-score': 0.13286264441591786}
+partial
+{'correct': 70, 'incorrect': 0, 'partial': 165, 'missed': 461, 'spurious': 2185, 'possible': 696, 'actual': 2420, 'precision': 0.06301652892561983, 'recall': 0.21910919540229884, 'f1-score': 0.0978818998716303}
+strict
+{'correct': 67, 'incorrect': 168, 'partial': 0, 'missed': 461, 'spurious': 2185, 'possible': 696, 'actual': 2420, 'precision': 0.02768595041322314, 'recall': 0.09626436781609195, 'f1-score': 0.04300385109114249}
+exact
+{'correct': 70, 'incorrect': 165, 'partial': 0, 'missed': 461, 'spurious': 2185, 'possible': 696, 'actual': 2420, 'precision': 0.028925619834710745, 'recall': 0.10057471264367816, 'f1-score': 0.044929396662387676}
+
+
+Rootcause
+ent_type
+{'correct': 1, 'incorrect': 23, 'partial': 0, 'missed': 305, 'spurious': 2185, 'possible': 329, 'actual': 2209, 'precision': 0.0004526935264825713, 'recall': 0.00303951367781155, 'f1-score': 0.0007880220646178092}
+partial
+{'correct': 5, 'incorrect': 0, 'partial': 19, 'missed': 305, 'spurious': 2185, 'possible': 329, 'actual': 2209, 'precision': 0.006564056133997284, 'recall': 0.044072948328267476, 'f1-score': 0.011426319936958236}
+strict
+{'correct': 0, 'incorrect': 24, 'partial': 0, 'missed': 305, 'spurious': 2185, 'possible': 329, 'actual': 2209, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0}
+exact
+{'correct': 5, 'incorrect': 19, 'partial': 0, 'missed': 305, 'spurious': 2185, 'possible': 329, 'actual': 2209, 'precision': 0.0022634676324128564, 'recall': 0.015197568389057751, 'f1-score': 0.003940110323089045}
+
+
+Trigger
+ent_type
+{'correct': 30, 'incorrect': 19, 'partial': 0, 'missed': 223, 'spurious': 2185, 'possible': 272, 'actual': 2234, 'precision': 0.01342882721575649, 'recall': 0.11029411764705882, 'f1-score': 0.023942537909018353}
+partial
+{'correct': 7, 'incorrect': 0, 'partial': 42, 'missed': 223, 'spurious': 2185, 'possible': 272, 'actual': 2234, 'precision': 0.012533572068039392, 'recall': 0.10294117647058823, 'f1-score': 0.0223463687150838}
+strict
+{'correct': 3, 'incorrect': 46, 'partial': 0, 'missed': 223, 'spurious': 2185, 'possible': 272, 'actual': 2234, 'precision': 0.0013428827215756492, 'recall': 0.011029411764705883, 'f1-score': 0.002394253790901836}
+exact
+{'correct': 7, 'incorrect': 42, 'partial': 0, 'missed': 223, 'spurious': 2185, 'possible': 272, 'actual': 2234, 'precision': 0.003133393017009848, 'recall': 0.025735294117647058, 'f1-score': 0.00558659217877095}
+
+
+worth
+ent_type
+{'correct': 48, 'incorrect': 12, 'partial': 0, 'missed': 377, 'spurious': 2185, 'possible': 437, 'actual': 2245, 'precision': 0.021380846325167038, 'recall': 0.10983981693363844, 'f1-score': 0.035794183445190156}
+partial
+{'correct': 0, 'incorrect': 0, 'partial': 60, 'missed': 377, 'spurious': 2185, 'possible': 437, 'actual': 2245, 'precision': 0.013363028953229399, 'recall': 0.06864988558352403, 'f1-score': 0.02237136465324385}
+strict
+{'correct': 0, 'incorrect': 60, 'partial': 0, 'missed': 377, 'spurious': 2185, 'possible': 437, 'actual': 2245, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0}
+exact
+{'correct': 0, 'incorrect': 60, 'partial': 0, 'missed': 377, 'spurious': 2185, 'possible': 437, 'actual': 2245, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0}
+
+
+Enforcement
+ent_type
+{'correct': 1104, 'incorrect': 0, 'partial': 0, 'missed': 587, 'spurious': 2185, 'possible': 1691, 'actual': 3289, 'precision': 0.3356643356643357, 'recall': 0.6528681253696038, 'f1-score': 0.44337349397590364}
+partial
+{'correct': 1006, 'incorrect': 0, 'partial': 98, 'missed': 587, 'spurious': 2185, 'possible': 1691, 'actual': 3289, 'precision': 0.32076619033140774, 'recall': 0.6238911886457718, 'f1-score': 0.4236947791164659}
+strict
+{'correct': 1006, 'incorrect': 98, 'partial': 0, 'missed': 587, 'spurious': 2185, 'possible': 1691, 'actual': 3289, 'precision': 0.3058680449984798, 'recall': 0.5949142519219397, 'f1-score': 0.40401606425702813}
+exact
+{'correct': 1006, 'incorrect': 98, 'partial': 0, 'missed': 587, 'spurious': 2185, 'possible': 1691, 'actual': 3289, 'precision': 0.3058680449984798, 'recall': 0.5949142519219397, 'f1-score': 0.40401606425702813}
+
+
